@@ -79,6 +79,9 @@
         "SLACK_CLIENT_SECRET",
         "SLACK_TOKEN_ENCRYPTION_KEY",
 
+        "CLICKUP_API_TOKEN",
+        "CLICKUP_LIST_MAP",
+
         "GITHUB_APP_ID",
         "GITHUB_PRIVATE_KEY",
         "GITHUB_WEBHOOK_SECRET"
