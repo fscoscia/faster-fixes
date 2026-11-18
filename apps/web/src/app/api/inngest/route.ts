@@ -1,5 +1,6 @@
 import { inngest } from "@/server/inngest";
 import { addContactToSegment } from "@/app/_domains/user/_services/add-contact-to-segment.inngest";
+import { createClickUpTask } from "@/app/_domains/integration/_services/clickup/create-clickup-task.inngest";
 import { createGitHubIssue } from "@/app/_domains/integration/_services/github/create-github-issue.inngest";
 import { createJiraIssue } from "@/app/_domains/integration/_services/jira/create-jira-issue.inngest";
 import { createLinearIssue } from "@/app/_domains/integration/_services/linear/create-linear-issue.inngest";
@@ -33,6 +34,7 @@ export const maxDuration = 60;
 export const { GET, POST, PUT } = serve({
   client: inngest,
   functions: [
+    createClickUpTask,
     createGitHubIssue,
     syncGitHubIssueStatus,
     syncFeedbackStatusToGitHub,
